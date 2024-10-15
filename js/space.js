@@ -69,3 +69,4 @@ document.getElementById('btnBuscar').addEventListener('click', function () {
             
         });
 });
+

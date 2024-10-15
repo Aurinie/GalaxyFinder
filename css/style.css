@@ -55,3 +55,12 @@ main {
 footer {
   margin-top: 50px;
 }
+
+/* Estilo para la descripción dentro de cada tarjeta */
+.card-text {
+  font-size: 1rem;  /* Tamaño de fuente */
+  color: #555;  /* Color del texto */
+  height: 100px;  /* Altura máxima para la descripción */
+  overflow-y: auto;  /* Barra de desplazamiento vertical */
+  padding-right: 10px;  /* Espacio para evitar que la barra de scroll solape el texto */
+}
