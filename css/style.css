@@ -1,3 +1,57 @@
 main {
     min-height: calc(100vh - 160px);
   }
+  /* Estilo para el contenedor de las imágenes */
+#contenedor {
+  display: grid;  /* Utilizamos grid layout para organizar las imágenes en cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Distribuye las columnas adaptándose al tamaño de pantalla */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding-top: 20px; /* Añadimos un espacio superior */
+}
+
+/* Estilo para las tarjetas de resultados */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* Asegura que los contenidos no se desborden */ 
+  transition: transform 0.2s ease;   /* Transición suave para cuando la tarjeta es hover */
+}
+
+.card:hover {
+  transform: scale(1.05);  /* Efecto de "zoom" cuando se pasa el cursor sobre la tarjeta */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Botón centrado */
+#btnBuscar {
+  display: block;  /* Hace que el botón sea un bloque (por defecto los botones son inline-block) */
+  margin: 0 auto;  /* Centra el botón horizontalmente */ 
+}
+
+/* Mejoras al input de búsqueda */
+#inputBuscar {
+  text-align: center;  /* Centra el texto que el usuario escribe dentro del campo de búsqueda */
+}
+
+/* Espaciado en el footer */
+footer {
+  margin-top: 50px;
+}
